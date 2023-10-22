@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  react-app:
+    image: quotes-frontend-image
+    build:
+      context: .
+    environment:
+      REACT_APP_BACKEND_URL: http://backend:3001
+    ports:
+      - 3000:3000
